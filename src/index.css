@@ -1,0 +1,123 @@
+/* Global scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+  width: 4px;
+  /* 4px */
+  height: 4px;
+  display: none;
+  /* 4px */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: var(--dashstack-secondary_border);
+  border-radius: 6px;
+  /* 6px */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: var(--dashstack-button-bg-secondary);
+  border-radius: 6px;
+  /* 6px */
+  background-clip: content-box;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --dashstack-primary-blue: #007fff;
+  --dashstack-light-blue: #1f87f0;
+  --dashstack-primary-bg: #f4edf5;
+  --dashstack-secondary-bg: #7592c7;
+  --dashstack-light-green: #62b55a;
+  --dashstack-light-green-2: #abe3a6;
+  --dashstack-primary-error: #f03232;
+  --dashstack-secondary-error: #f2acac;
+  --dashstack-white: #ffffff;
+  --dashstack-black: #000000;
+  --dashstack-input-bg-primary: #f3f3f3;
+  --dashstack-secondary_border: #dcdcdc;
+  --dashstack-button-bg-secondary: #8f8f8f;
+  --dashstack-primary-warning: #d1b469;
+  --dashstack-warning-light: #f0e7d1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* min-width: 320px; */
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.no-data {
+  font-weight: 500 !important;
+  font-size: 25px !important;
+  line-height: 120% !important;
+  text-align: center !important;
+  color: var(--dashstack-black) !important;
+}
+
+.primary-button {
+  background-color: var(--dashstack-primary-blue) !important;
+  border-radius: 100px !important;
+  color: var(--dashstack-white) !important;
+  box-shadow: none !important;
+}
+
+.secondary-button {
+  background-color: var(--dashstack-button-bg-secondary) !important;
+  border-radius: 100px !important;
+  box-shadow: none !important;
+}
+
+.success-button {
+  background-color: var(--dashstack-light-green) !important;
+  border-radius: 100px !important;
+  color: var(--dashstack-white) !important;
+  box-shadow: none !important;
+}
+
+.outlined-secondary-button {
+  background-color: var(--dashstack-white) !important;
+  border-radius: 30px !important;
+  border: 1px solid var(--dashstack-secondary_border) !important;
+  color: var(--dashstack-black) !important;
+  box-shadow: none !important;
+}
+
+.input-primary>.MuiInputBase-root {
+  background-color: var(--dashstack-input-bg-primary) !important;
+  border-radius: 10px !important;
+  height: 2.42px !important;
+}
+
+.input-primary>.MuiInputBase-root>.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.input-secondary>.MuiInputBase-root {
+  background-color: var(--dashstack-white) !important;
+  border-radius: 10px !important;
+  height: 40px !important;
+}
+
+.input-secondary>.MuiInputBase-root>.MuiOutlinedInput-notchedOutline {
+  border: 1px solid var(--dashstack-secondary_border) !important;
+}
+
+.input-textarea>.MuiInputBase-root {
+  background-color: var(--dashstack-white) !important;
+  border-radius: 10px !important;
+}
+
+.input-textarea>.MuiInputBase-root>.MuiOutlinedInput-notchedOutline {
+  border: 1 solid var(--dashstack-secondary_border) !important;
+}
