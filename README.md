@@ -1,5 +1,6 @@
 # installation
 
+=> git clone https://github.com/TukunKodecha/DashStack.git
 => npm install
 
 # running the server
