@@ -3,6 +3,13 @@ import { initReactI18next } from 'react-i18next';
 import en from '../locales/en.json';
 import fr from '../locales/fr.json';
 import es from '../locales/es.json';
+import store from '../store/store';
+
+// Get the current language from Redux store
+const getCurrentLanguage = () => {
+    const state = store.getState();
+    return state.language?.language;
+};
 
 i18n
     .use(initReactI18next)
@@ -12,7 +19,7 @@ i18n
             fr: { translation: fr },
             es: { translation: es }
         },
-        lng: localStorage.getItem('language') || 'en',  // Load persisted language
+        lng: getCurrentLanguage(),  // Load persisted language
         fallbackLng: 'en',
         interpolation: {
             escapeValue: false
